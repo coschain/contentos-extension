@@ -40,6 +40,6 @@
     "run_at": "document_start",
     "all_frames": true
   }],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.captcha.qq.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.captcha.qq.com https://www.google-analytics.com; object-src 'self'",
   "web_accessible_resources": [ "static/js/content.js" ]
 }

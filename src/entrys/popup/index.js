@@ -3,6 +3,7 @@ import VueClipboards from 'vue-clipboards';
 import VTooltip from 'v-tooltip';
 import VueQrcode from '@chenfengyuan/vue-qrcode';
 import vueTencentCaptcha from '@carpenter/vue-tencent-captcha';
+import VueAnalytics from 'vue-analytics';
 
 import App from './App';
 import router from './router';
@@ -25,6 +26,12 @@ Vue.use(Toast);
 Vue.component(VueQrcode.name, VueQrcode);
 Vue.use(VTooltip);
 Vue.use(vueTencentCaptcha);
+
+Vue.use(VueAnalytics, {
+  id: 'UA-155294164-1',
+  router,
+  set: [{ field: 'checkProtocolTask', value: 'null' }],
+});
 
 function initApp(lang, state) {
   const { network, wallet, locked, walletCreated } = state;
