@@ -3,7 +3,7 @@
     <div class="canvas-inner">
       <slot></slot>
     </div>
-    <a href="javascript:;" v-if="!hideClose" @click="onClose" class="close"></a>
+    <a v-if="!hideClose" @click="onClose" class="close"></a>
   </div>
 </template>
 

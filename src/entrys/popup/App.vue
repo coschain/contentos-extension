@@ -28,7 +28,7 @@ export default {
   },
   created() {
     if (!this.$root.walletCreated) {
-      this.$router.replace({ path: '/' });
+      this.$router.replace({ path: '/' }).catch(() => {});
       return;
     }
     const initRoutePath = this.$route.path;

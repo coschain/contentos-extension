@@ -4,10 +4,10 @@
       <div class="list-item-title wallet-name">
         {{ item.account }}
         <div class="space"></div>
-        <a v-if="index != $root.wallet.selected" @click="changeAccount(item.id)" class="icon icon-selection" v-tooltip="$t('common.setDefault')" href="javascript:;"></a>
-        <a v-clipboard="item.account" @success="onCopySuccess" @error="onCopyError" class="icon icon-copy" v-tooltip="$t('common.copyAddress')" href="javascript:;"></a>
-        <a @click="exportAccount(item.id)" class="icon icon-export" v-tooltip="$t('common.export')" href="javascript:;"></a>
-        <a @click="deleteAccount(item.id)" class="icon icon-delete" v-tooltip="$t('common.delete')" href="javascript:;"></a>
+        <a v-if="index != $root.wallet.selected" @click="changeAccount(item.id)" class="icon icon-selection" v-tooltip="$t('common.setDefault')"></a>
+        <a v-clipboard="item.account" @success="onCopySuccess" @error="onCopyError" class="icon icon-copy" v-tooltip="$t('common.copyAddress')"></a>
+        <a @click="exportAccount(item.id)" class="icon icon-export" v-tooltip="$t('common.export')"></a>
+        <a @click="deleteAccount(item.id)" class="icon icon-delete" v-tooltip="$t('common.delete')"></a>
       </div>
       <div class="list-item-content wallet-balances">
         <div class="balance-item layout-box">

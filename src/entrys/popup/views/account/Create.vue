@@ -23,14 +23,9 @@
     </div>
     <div v-if="stepIndex == 2" class="steps-item steps-3">
       <div class="layout-box common-switch">
-        <a
-          v-for="(item, index) in importTypes"
-          :key="index"
-          :class="`box-col switch-item${importTypeIndex == index ? ' selected' : ''}`"
-          @click="importTypeIndex = index"
-          href="javascript:;"
-          >{{ item }}</a
-        >
+        <a v-for="(item, index) in importTypes" :key="index" :class="`box-col switch-item${importTypeIndex == index ? ' selected' : ''}`" @click="importTypeIndex = index">{{
+          item
+        }}</a>
       </div>
       <div v-if="importTypeIndex == 0" class="form-item">
         <div class="item-title">{{ $t('create.reorderTips') }}</div>
@@ -48,9 +43,9 @@
     </div>
     <div class="buttons">
       <vueTencentCaptcha v-if="stepIndex == 2" appid="2085519879" @callback="oncaptCaptchaCallback">
-        <a :class="`common-button${operating ? ' disabled' : ''}`" href="javascript:;">{{ $t('create.verify') }}</a>
+        <a :class="`common-button${operating ? ' disabled' : ''}`">{{ $t('create.verify') }}</a>
       </vueTencentCaptcha>
-      <a v-else :class="`common-button${operating ? ' disabled' : ''}`" @click="goNext" href="javascript:;">{{ $t('common.next') }}</a>
+      <a v-else :class="`common-button${operating ? ' disabled' : ''}`" @click="goNext">{{ $t('common.next') }}</a>
     </div>
   </div>
 </template>

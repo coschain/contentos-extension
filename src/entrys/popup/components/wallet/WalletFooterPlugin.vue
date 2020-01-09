@@ -10,7 +10,7 @@
           @click="changeNetwork(item.id)"
           :class="`popover-item${index == $root.network.selected ? ' selected' : ''}`"
         >
-          <a href="javascript:;">{{ item.title }}</a>
+          <a>{{ item.title }}</a>
         </div>
         <div class="popover-item item-space item-operate">
           <router-link to="/setting/network">{{ $t('components.addNetwork') }}</router-link>

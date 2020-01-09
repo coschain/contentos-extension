@@ -1,14 +1,9 @@
 <template>
   <div class="createaccount-page">
     <div class="layout-box common-switch">
-      <a
-        v-for="(item, index) in importTypes"
-        :key="index"
-        :class="`box-col switch-item${importTypeIndex == index ? ' selected' : ''}`"
-        @click="importTypeIndex = index"
-        href="javascript:;"
-        >{{ item }}</a
-      >
+      <a v-for="(item, index) in importTypes" :key="index" :class="`box-col switch-item${importTypeIndex == index ? ' selected' : ''}`" @click="importTypeIndex = index">{{
+        item
+      }}</a>
     </div>
     <div class="form-items">
       <div class="form-item">
@@ -25,7 +20,7 @@
       </div>
     </div>
     <div class="buttons">
-      <a :class="`common-button${operating ? ' disabled' : ''}`" @click="goConfirm" href="javascript:;">{{ $t('common.confirm') }}</a>
+      <a :class="`common-button${operating ? ' disabled' : ''}`" @click="goConfirm">{{ $t('common.confirm') }}</a>
     </div>
   </div>
 </template>

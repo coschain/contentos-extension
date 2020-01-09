@@ -5,10 +5,10 @@
         <div class="list-item-title">
           {{ item.title }}
           <div class="space"></div>
-          <a v-if="index != $root.network.selected" @click="changeNetwork(item.id)" class="icon icon-selection" v-tooltip="$t('common.setDefault')" href="javascript:;"></a>
-          <a v-if="!item.canModify" class="icon icon-safety" v-tooltip="$t('network.secure')" href="javascript:;"></a>
-          <a v-if="item.canModify" @click="modifyNetwork(item.id)" class="icon icon-modify" v-tooltip="$t('common.modify')" href="javascript:;"></a>
-          <a v-if="item.canModify" @click="deleteNetwork(item.id)" class="icon icon-delete" v-tooltip="$t('common.delete')" href="javascript:;"></a>
+          <a v-if="index != $root.network.selected" @click="changeNetwork(item.id)" class="icon icon-selection" v-tooltip="$t('common.setDefault')"></a>
+          <a v-if="!item.canModify" class="icon icon-safety" v-tooltip="$t('network.secure')"></a>
+          <a v-if="item.canModify" @click="modifyNetwork(item.id)" class="icon icon-modify" v-tooltip="$t('common.modify')"></a>
+          <a v-if="item.canModify" @click="deleteNetwork(item.id)" class="icon icon-delete" v-tooltip="$t('common.delete')"></a>
         </div>
         <div class="list-item-content">Chain：{{ item.key }}</div>
         <div class="list-item-content">RPC：{{ item.url }}</div>

@@ -8,11 +8,11 @@
     <div class="infos">
       <div class="title">{{ $t('aboutus.links') }}</div>
       <div class="content">
-        <a v-for="(item, index) in links" :key="index" @click="openUrl(item.url)" href="javascript:;">{{ item.title }}</a>
+        <a v-for="(item, index) in links" :key="index" @click="openUrl(item.url)">{{ item.title }}</a>
       </div>
       <div class="title">{{ $t('aboutus.followUs') }}</div>
       <div class="content">
-        <a v-for="(item, index) in followUs" :key="index" @click="openUrl(item.url)" href="javascript:;">{{ item.title }}</a>
+        <a v-for="(item, index) in followUs" :key="index" @click="openUrl(item.url)">{{ item.title }}</a>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
       @click="changeAccount(item.id)"
       :class="`popover-item item-wallet${index == $root.wallet.selected ? ' selected' : ''}`"
     >
-      <a href="javascript:;">
+      <a>
         {{ item.account }}<span :class="`network-type type-${item.network}`">{{ item.networkTitle }}</span>
       </a>
     </div>

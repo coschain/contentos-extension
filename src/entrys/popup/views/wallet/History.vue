@@ -2,19 +2,14 @@
   <div class="history-page">
     <div class="top-view">
       <div class="layout-box common-switch">
-        <a
-          v-for="(item, index) in historyTypes"
-          :key="index"
-          :class="`box-col switch-item${typeIndex == index ? ' selected' : ''}`"
-          @click="changeHistoryType(index)"
-          href="javascript:;"
-          >{{ item.name }}</a
-        >
+        <a v-for="(item, index) in historyTypes" :key="index" :class="`box-col switch-item${typeIndex == index ? ' selected' : ''}`" @click="changeHistoryType(index)">{{
+          item.name
+        }}</a>
       </div>
     </div>
     <ul v-if="dataList" class="slide-list history-list">
       <li v-for="(item, index) in dataList" :key="index" class="slide-item sitem-hide-icon sitem-hide-arrow">
-        <a @click="openTxInfo(item.hash)" href="javascript:;">
+        <a @click="openTxInfo(item.hash)">
           {{ item.fmtHash }}
           <div class="sitem-tip">{{ item.amount }} COS</div>
           <div class="sitem-brief layout-box">
@@ -26,7 +21,7 @@
         <div class="halfline"></div>
       </li>
     </ul>
-    <a v-if="dataList" href="javascript:;" @click="openMoreTxs" class="more-view">{{ $t('history.seeMore') }}</a>
+    <a v-if="dataList" @click="openMoreTxs" class="more-view">{{ $t('history.seeMore') }}</a>
   </div>
 </template>
 <script>

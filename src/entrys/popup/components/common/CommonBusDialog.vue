@@ -19,9 +19,9 @@
         </div>
       </div>
       <div class="layout-box buttons">
-        <a v-if="cancelText" @click="onCancel" class="box-col common-button" plain href="javascript:;">{{ cancelText }}</a>
-        <a v-if="clipboardData" v-clipboard="clipboardData" @success="onConfirm" class="box-col common-button" href="javascript:;">{{ confirmText || $t('common.copy') }}</a>
-        <a v-else @click="onConfirm" class="box-col common-button" href="javascript:;">{{ confirmText || $t('common.ok') }}</a>
+        <a v-if="cancelText" @click="onCancel" class="box-col common-button" plain>{{ cancelText }}</a>
+        <a v-if="clipboardData" v-clipboard="clipboardData" @success="onConfirm" class="box-col common-button">{{ confirmText || $t('common.copy') }}</a>
+        <a v-else @click="onConfirm" class="box-col common-button">{{ confirmText || $t('common.ok') }}</a>
       </div>
     </div>
   </base-dialog>

@@ -2,7 +2,7 @@
   <div class="lock-time-page">
     <ul class="slide-list slide-small-list">
       <li v-for="(item, index) in dataList" :key="index" class="slide-item sitem-hide-icon sitem-hide-arrow">
-        <a href="javascript:;" @click="changeDefault(item.value)">{{ $t(item.title) }}</a>
+        <a @click="changeDefault(item.value)">{{ $t(item.title) }}</a>
         <span v-if="item.value == lockTime" class="icon icon-selection">Select</span>
         <div class="halfline"></div>
       </li>

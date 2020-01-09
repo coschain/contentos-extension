@@ -3,11 +3,11 @@
     <div class="welcome-page">
       <div class="operate-item">
         <div class="item-brief">{{ $t('welcome.accountNone') }}</div>
-        <a href="javascript:;" @click="navigationTo('createAccount')" class="common-button">{{ $t('welcome.createAccount') }}</a>
+        <a @click="navigationTo('createAccount')" class="common-button">{{ $t('welcome.createAccount') }}</a>
       </div>
       <div class="operate-item">
         <div class="item-brief">{{ $t('welcome.haveAccount') }}</div>
-        <a href="javascript:;" @click="navigationTo('importAccount')" plain class="common-button">{{ $t('welcome.importAccount') }}</a>
+        <a @click="navigationTo('importAccount')" plain class="common-button">{{ $t('welcome.importAccount') }}</a>
       </div>
     </div>
   </account-layout>

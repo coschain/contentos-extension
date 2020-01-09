@@ -12,8 +12,8 @@
       <div class="list-item-title">
         {{ index + 1 }}、{{ item.name }}
         <div class="space"></div>
-        <a v-if="voted == item.name" @click="changeVote(item.name, 1)" class="icon icon-cancel" v-tooltip="$t('bpvote.cancelVote')" href="javascript:;"></a>
-        <a v-else-if="!voted" @click="changeVote(item.name, 0)" class="icon icon-selection" v-tooltip="$t('bpvote.vote')" href="javascript:;"></a>
+        <a v-if="voted == item.name" @click="changeVote(item.name, 1)" class="icon icon-cancel" v-tooltip="$t('bpvote.cancelVote')"></a>
+        <a v-else-if="!voted" @click="changeVote(item.name, 0)" class="icon icon-selection" v-tooltip="$t('bpvote.vote')"></a>
       </div>
       <div class="list-item-content bp-vote-content">
         <div class="balance-item layout-box">
@@ -31,7 +31,7 @@
         <div v-if="item.website" class="balance-item layout-box">
           <div class="box-col">{{ $t('bpvote.website') }}</div>
           <div class="box-col">
-            <a @click="openUrl(item.website)" href="javascript:;">{{ item.website }}</a>
+            <a @click="openUrl(item.website)">{{ item.website }}</a>
           </div>
         </div>
       </div>

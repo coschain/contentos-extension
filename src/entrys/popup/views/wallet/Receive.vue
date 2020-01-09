@@ -7,7 +7,7 @@
         <div class="username">{{ currentAccount.account }}</div>
       </div>
       <div class="buttons">
-        <a v-clipboard="currentAccount.account" @success="onCopySuccess" @error="onCopyError" class="common-button" href="javascript:;">{{ $t('common.copyAddress') }}</a>
+        <a v-clipboard="currentAccount.account" @success="onCopySuccess" @error="onCopyError" class="common-button">{{ $t('common.copyAddress') }}</a>
       </div>
     </template>
   </div>

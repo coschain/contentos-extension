@@ -114,9 +114,6 @@ const config = {
         transform: (content) => {
           const jsonContent = JSON.parse(content);
           jsonContent.version = version;
-          if (process.env.HMR === 'true') {
-            jsonContent['content_security_policy'] = "script-src 'self' 'unsafe-eval' https://ssl.captcha.qq.com; object-src 'self'";
-          }
           return JSON.stringify(jsonContent, null, 2);
         },
       },
