@@ -161,6 +161,7 @@
 		"undelegate": "回收",
 		"borrower": "接收人",
 		"amount": "数额",
+		"created": "借出时间",
 		"duration": "期限",
 		"status": "状态",
 		"recall_success": "回收成功",

@@ -1,8 +1,8 @@
 <template>
   <div v-if="$root.wallet" class="common-list delegate-list-page">
     <div class="common-list-item delegate-operate layout-box">
-      <div class="box-col">
-        <router-link to="/wallet/vestlend">{{ $t('delegate.lend') }}</router-link>
+      <div class="box-col" @click="gotoVestLend()">
+        {{ $t('delegate.lend') }}
       </div>
     </div>
     <div v-if="orders.length > 0">
@@ -25,7 +25,11 @@
           </div>
           <div class="delegate-item layout-box">
             <div class="box-col">{{ $t('delegate.duration') }}</div>
-            <div class="box-col">{{ item.maturityBlock - item.createdBlock }} Sec</div>
+            <div class="box-col">{{ formatBlocksTime(item.maturityBlock - item.createdBlock) }}</div>
+          </div>
+          <div class="delegate-item layout-box">
+            <div class="box-col">{{ $t('delegate.created') }}</div>
+            <div class="box-col">{{ formatBlocksTime(chainState.lastIrreversibleBlockNumber - item.createdBlock) }} Ago</div>
           </div>
           <div class="delegate-item layout-box">
             <div class="box-col">{{ $t('delegate.status') }}</div>
@@ -38,7 +42,7 @@
 </template>
 
 <script>
-import { formatDecimal } from '../../../../util/Format';
+import { formatDecimal, timeConversion } from '../../../../util/Format';
 import MixinAccount from '../../plugins/MixinAccount';
 import * as WalletApi from '../../service/WalletApi';
 
@@ -118,6 +122,12 @@ export default {
       this.stopLoading();
       this.eventBus.$emit('refreshAccountInfo');
     },
+    formatBlocksTime(blocks) {
+      return timeConversion(blocks * 1000);
+    },
+    gotoVestLend() {
+      this.$router.push('/wallet/vestlend');
+    },
   },
 };
 </script>
@@ -128,7 +138,10 @@ export default {
   .delegate-operate {
     background-color: #1b46d3;
     text-align: center;
+    font-weight: bold;
+    color: #eaeaea;
     padding: 0.65rem 0;
+    cursor: pointer;
     a {
       color: #eaeaea;
       transition: color ease 0.2s;

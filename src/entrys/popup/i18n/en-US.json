@@ -161,7 +161,8 @@
 		"undelegate": "Recall",
 		"borrower": "Borrower",
 		"amount": "Amount",
-		"duration": "Duration",
+		"created": "Lent",
+		"duration": "Maturity",
 		"status": "Status",
 		"recall_success": "Recall Success",
 		"recall_failed": "Recall Failed"
