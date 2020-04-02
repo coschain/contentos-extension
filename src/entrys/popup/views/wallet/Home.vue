@@ -5,15 +5,15 @@
       <div class="balance">{{ $root.userData.balance }} COS</div>
       <div class="layout-box wallet-operate">
         <div class="box-col">
-          <router-link class="operate-item" to="/wallet/receive">
-            <span class="icon icon-receive"></span>
-            {{ $t('home.receive') }}
-          </router-link>
-        </div>
-        <div class="box-col">
           <router-link class="operate-item" to="/wallet/transfer">
             <span class="icon icon-transfer"></span>
             {{ $t('home.transfer') }}
+          </router-link>
+        </div>
+        <div class="box-col">
+          <router-link class="operate-item" to="/wallet/delegate">
+            <span class="icon icon-receive"></span>
+            {{ $t('home.delegate') }}
           </router-link>
         </div>
         <div class="box-col">

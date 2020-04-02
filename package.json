@@ -22,11 +22,11 @@
   "dependencies": {
     "@carpenter/vue-tencent-captcha": "^0.2.0",
     "@chenfengyuan/vue-qrcode": "^1.0.1",
-    "@coschain/cosjs": "^1.2.6",
+    "@coschain/cosjs": "^1.2.8",
     "axios": "^0.18.1",
     "browser-passworder": "^2.0.3",
     "bs58": "^4.0.1",
-    "cos-grpc-js": "^1.5.10",
+    "cos-grpc-js": "^1.5.17",
     "post-message-stream": "^3.0.0",
     "uuidv4": "^6.0.0",
     "v-tooltip": "^2.0.2",

@@ -36,6 +36,7 @@
 		"lockAccount": "请先解锁",
 		"home": "钱包",
 		"transfer": "转账",
+		"delegate": "借出的VEST",
 		"receive": "收款",
 		"exchange": "转换",
 		"history": "记录",
@@ -154,6 +155,16 @@
 		"success": "转账成功",
     "failed": "转账失败"
 	},
+	"delegate": {
+		"lend": "借出",
+		"undelegate": "回收",
+		"borrower": "接收人",
+		"amount": "数额",
+		"duration": "期限",
+		"status": "状态",
+		"recall_success": "回收成功",
+		"recall_failed": "回收失败"
+	},
 	"vote": {
 		"voter": "投票者：",
 		"bpName": "Bp 名称：",
@@ -268,6 +279,7 @@
 	"home": {
 		"receive": "收款",
 		"transfer": "转账",
+		"delegate": "VEST借贷",
 		"history": "记录",
 		"left": "剩余",
 		"networkError": "网络错误"

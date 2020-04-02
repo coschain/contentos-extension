@@ -213,3 +213,15 @@ export function userTrxList(name, limit = 100) {
 export function signMessage(account, message, extra) {
   return callBackend('signMessage', { ...extra, account, message });
 }
+
+export function delegateVest(sender, receiver, amount, duration) {
+  return callBackend('delegateVest', { sender, receiver, amount, duration });
+}
+
+export function unDelegateVest(sender, orderId) {
+  return callBackend('unDelegateVest', { sender, orderId });
+}
+
+export function vestDelegationOrders(name, isLender) {
+  return callBackend('vestDelegationOrders', { name, isLender });
+}

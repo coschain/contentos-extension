@@ -558,6 +558,15 @@ const methods = {
     const signature = UnPackedCosApi.signMessage(message, privateKey);
     return { signature, message };
   },
+  delegateVest({ sender, receiver, amount, duration }) {
+    return state.cos.wallet.delegateVest(sender, receiver, amount, duration);
+  },
+  unDelegateVest({ sender, orderId }) {
+    return state.cos.wallet.unDelegateVest(sender, orderId);
+  },
+  vestDelegationOrders({ name, isLender }) {
+    return state.cos.wallet.vestDelegationOrderList(name, 100, isLender);
+  },
 };
 
 // init state

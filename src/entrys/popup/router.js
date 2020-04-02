@@ -9,6 +9,7 @@ import LockAccount from './views/account/Lock';
 
 import WalletHome from './views/wallet/Home';
 import WalletTransfer from './views/wallet/Transfer';
+import WalletDelegate from './views/wallet/Delegate';
 import WalletReceive from './views/wallet/Receive';
 import WalletExchange from './views/wallet/Exchange';
 import WalletHistory from './views/wallet/History';
@@ -102,6 +103,15 @@ export default new Router({
       component: WalletTransfer,
       meta: {
         title: 'nav.transfer',
+        headerType: HeaderTypes.back,
+        requireAuth: true,
+      },
+    },
+    {
+      path: '/wallet/delegate',
+      component: WalletDelegate,
+      meta: {
+        title: 'nav.delegate',
         headerType: HeaderTypes.back,
         requireAuth: true,
       },

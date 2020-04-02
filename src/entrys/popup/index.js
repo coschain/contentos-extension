@@ -52,6 +52,10 @@ function initApp(lang, state) {
           withdrawRemains: '0.000000',
           nextWithdraw: '',
           votedBlockProducer: '',
+          vestLent: '0.000000',
+          vestBorrowed: '0.000000',
+          vestDelivering: '0.000000',
+          vestOwned: '0.000000',
         },
         dialogData: null,
       };
