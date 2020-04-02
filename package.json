@@ -1,7 +1,7 @@
 {
   "name": "contentos-extension",
   "title": "Contentos Wallet",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Contentos Wallet in your Browser",
   "author": "raisezhang@hotmail.com",
   "license": "MIT",
