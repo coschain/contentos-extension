@@ -2,7 +2,7 @@
   <div v-if="$root.wallet" class="common-list delegate-list-page">
     <div class="common-list-item delegate-operate layout-box">
       <div class="box-col">
-        <router-link to="/account/create">{{ $t('delegate.lend') }}</router-link>
+        <router-link to="/wallet/vestlend">{{ $t('delegate.lend') }}</router-link>
       </div>
     </div>
     <div v-if="orders.length > 0">

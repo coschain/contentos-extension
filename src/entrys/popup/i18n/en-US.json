@@ -37,6 +37,7 @@
 		"home": "Wallet",
 		"transfer": "Transfer",
 		"delegate": "Lent VEST",
+		"vestlend": "Lending VEST",
 		"receive": "Receive",
 		"exchange": "Exchange",
 		"history": "History",
@@ -164,6 +165,16 @@
 		"status": "Status",
 		"recall_success": "Recall Success",
 		"recall_failed": "Recall Failed"
+	},
+	"vestlend": {
+		"maxQuote": "MAX: ",
+		"duration": "Duration",
+		"durationUnit": "In Seconds",
+		"inputDuration": "Input Duration",
+		"enterDuration": "Please Input Duration",
+		"confirm": "Confirm Lending",
+		"success": "Vest Lending Success",
+		"failed": "Vest Lending Failed"
 	},
 	"vote": {
 		"voter": "Voter：",

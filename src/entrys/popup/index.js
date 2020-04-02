@@ -51,6 +51,7 @@ function initApp(lang, state) {
           withdrawEachTime: '0.000000',
           withdrawRemains: '0.000000',
           nextWithdraw: '',
+          withdrawLeft: '0.000000',
           votedBlockProducer: '',
           vestLent: '0.000000',
           vestBorrowed: '0.000000',

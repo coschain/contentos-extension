@@ -54,6 +54,7 @@ export default {
       this.$root.userData.votedBlockProducer = res.info.votedBlockProducer.value;
       const { utcSeconds } = res.info.nextWithdrawTime;
       this.$root.userData.nextWithdraw = utcSeconds > 0 ? formatLongDate2(utcSeconds) : this.$t('components.noWaitingWithdraw');
+      this.$root.userData.withdrawLeft = formatDecimal((utcSeconds > 0 ? res.info.withdrawRemains.value - res.info.hasWithdrawn : 0) / 1e6, 6);
       this.$root.userData.vestLent = formatDecimal(res.info.vestLent.value / 1e6, 6);
       this.$root.userData.vestBorrowed = formatDecimal(res.info.vestBorrowed.value / 1e6, 6);
       this.$root.userData.vestDelivering = formatDecimal(res.info.vestDelivering.value / 1e6, 6);

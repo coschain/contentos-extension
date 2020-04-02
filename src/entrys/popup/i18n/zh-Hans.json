@@ -37,6 +37,7 @@
 		"home": "钱包",
 		"transfer": "转账",
 		"delegate": "借出的VEST",
+		"vestlend": "借出VEST",
 		"receive": "收款",
 		"exchange": "转换",
 		"history": "记录",
@@ -164,6 +165,16 @@
 		"status": "状态",
 		"recall_success": "回收成功",
 		"recall_failed": "回收失败"
+	},
+	"vestlend": {
+		"maxQuote": "最大额度: ",
+		"duration": "期限: ",
+		"durationUnit": "单位: 秒",
+		"inputDuration": "请输入期限",
+		"enterDuration": "请输入期限",
+		"confirm": "确认",
+		"success": "Vest已成功借出",
+		"failed": "Vest借出失败"
 	},
 	"vote": {
 		"voter": "投票者：",
