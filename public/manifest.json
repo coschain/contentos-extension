@@ -11,8 +11,6 @@
   },
   "permissions": [
     "<all_urls>",
-    "*://*/*",
-    "tabs",
     "background",
     "unlimitedStorage",
     "storage"
